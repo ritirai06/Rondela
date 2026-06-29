@@ -125,7 +125,6 @@ const Services = () => {
               <ScrollStackItem 
                 key={svc.id} 
                 index={index} 
-                totalItems={services.length}
                 className="mb-[30px] md:mb-[40px] last:mb-0 w-full flex justify-center"
               >
                 <div 

@@ -12,11 +12,10 @@ export const ScrollStack = ({ children, className = "" }: { children: React.Reac
 interface ScrollStackItemProps {
   children: React.ReactNode;
   index: number;
-  totalItems: number;
   className?: string;
 }
 
-export const ScrollStackItem = ({ children, index, totalItems, className = "" }: ScrollStackItemProps) => {
+export const ScrollStackItem = ({ children, index, className = "" }: ScrollStackItemProps) => {
   const targetRef = useRef<HTMLDivElement>(null);
   
   // Track this element's scroll progress relative to the viewport.
